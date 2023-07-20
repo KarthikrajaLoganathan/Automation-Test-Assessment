@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.895" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Feature to test APIs" name="Verify create user api - Example #1.1" time="7.665">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at Pages.APIAction.verifyResponseBody(APIAction.java:178)
+	at DataStepDefinition.RESTASSUREDAPISTEPS.userVerifiesTheResponseDataFor(RESTASSUREDAPISTEPS.java:35)
+	at ✽.User verifies the response data for "CREATE"(file:///C:/Users/Karthikraja/eclipse-workspace/TestScriptDataFileReadWrite/DataFeature/RESTASSUREDAPIVALIDATIONS.feature:34)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User set "/api/users" service endpoint................................passed
+When User perform "POST" request type for "CREATE"..........................passed
+And User verifies the response data for "CREATE"............................failed
+]]></system-out>
+</testcase>
+</testsuite>
